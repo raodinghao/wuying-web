@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🌟 SEO 核心优化：Title -->
+    <title>无影阅读 - PC端隐形沉浸式TXT与番茄小说阅读神器 | 职场必备</title>
+    
+    <!-- 🌟 SEO 核心优化：Description -->
+    <meta name="description" content="无影阅读是一款专为职场人打造的电脑端隐形阅读神器。支持本地TXT阅读与番茄小说网页版，提供桌面全透明伪装、AI视觉防窥屏、老板键秒切等黑科技，是您不可错过的安全摸鱼与沉浸式学习辅助工具。">
+    
+    <!-- 🌟 SEO 核心优化：Keywords -->
+    <meta name="keywords" content="无影阅读, 摸鱼神器, 隐形阅读器, 桌面透明阅读器, TXT阅读器, 番茄小说电脑版, PC看小说软件, 老板键软件, AI防窥屏, 沉浸式阅读">
+    
+    <meta name="author" content="无影阅读">
+    
+    <!-- 🌟 SEO 优化：Canonical 规范链接 (请替换为您真实的网址，防止权重分散) -->
+    <link rel="canonical" href="https://您的gitee-pages网址.com" />
+
+    <!-- 🌟 SEO 优化：Open Graph 标签 (优化微信、QQ、微博等社交平台分享卡片) -->
+    <meta property="og:title" content="无影阅读 - 极客级隐形沉浸阅读神器">
+    <meta property="og:description" content="全透明伪装、AI视觉防窥、本地TXT与番茄小说双引擎，带给你前所未有的安全阅读体验。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://您的gitee-pages网址.com">
+    <meta property="og:site_name" content="无影阅读官方网站">
+    <!-- 如果您有软件Logo，可以将下面这行的 content 换成 Logo 的绝对路径网络地址 -->
+    <meta property="og:image" content="https://via.placeholder.com/400x400.png?text=WuYing+Reader">
+
+    <!-- 🌟 SEO 优化：JSON-LD 结构化数据 (专门给搜索引擎爬虫看的，能极大提升软件类页面的搜索展现权重) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "无影阅读",
+      "operatingSystem": "Windows 7, Windows 10, Windows 11",
+      "applicationCategory": "UtilitiesApplication",
+      "description": "专为职场人打造的电脑端隐形阅读神器，支持本地TXT与番茄小说网页版，具备AI防窥屏和全透明伪装等特色功能。",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      }
+    }
+    </script>
+
+    <!-- 引入 Tailwind CSS 以实现极简大气的 UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 自定义一些平滑动画和毛玻璃效果 */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .fade-in { animation: fadeIn 0.8s ease-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-200 text-gray-800 font-sans min-h-screen antialiased selection:bg-blue-200">
+
+    <!-- 导航栏 -->
+    <nav class="glass-panel fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight text-gray-900 flex items-center gap-2">
+                <span class="text-2xl">👻</span> 无影阅读
+            </div>
+            <a href="#guide" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">使用指南</a>
+        </div>
+    </nav>
+
+    <!-- 第一屏：首屏横幅 -->
+    <header class="pt-32 pb-20 px-6 text-center fade-in">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
+                在老板眼皮底下 <br class="hidden md:block" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">从容、沉浸地阅读</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                专为职场人打造的极客级阅读工具。全透明伪装、AI 视觉防窥、本地 TXT 与番茄小说双引擎，带给你前所未有的安全摸鱼体验。
+            </p>
+            
+            <!-- 核心下载按钮：点击触发弹窗 -->
+            <button onclick="openModal()" class="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-bold shadow-xl shadow-gray-400/50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                🚀 免费下载最新版
+            </button>
+            <p class="mt-4 text-sm text-gray-400">支持 Windows 7 / 10 / 11 操作系统</p>
+
+            <!-- 教程外链按钮 -->
+            <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <!-- 视频教程按钮 (替换 href 里的链接) -->
+                <a href="YOUR_VIDEO_LINK_HERE" target="_blank" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg shadow-blue-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                    视频教程
+                </a>
+                
+                <!-- 详细操作指南按钮 (替换 href 里的链接) -->
+                <a href="https://docs.qq.com/doc/DRGJ0U1RXRk5Hc3dC" target="_blank" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 px-6 py-3 rounded-full text-sm font-bold shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
+                    </svg>
+                    详细操作指南
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- 第二屏：核心特性 -->
+    <section class="py-16 px-6 fade-in" style="animation-delay: 0.2s;">
+        <div class="max-w-6xl mx-auto">
+            <!-- 4个功能卡片网格 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 特性卡片 -->
+                <div class="glass-panel p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">🫥</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">极致隐形伪装</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">无边框极简设计，底色全透明。文字完美融入系统桌面，支持按住 Alt+滚轮 瞬间微调透明度。</p>
+                </div>
+                <div class="glass-panel p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">👁️</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">AI 视觉防窥</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">独创 OpenCV 本地摄像头路人侦测。背后有人靠近时，软件瞬间自毁隐藏，危机解除一键唤回。</p>
+                </div>
+                <div class="glass-panel p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">🍅</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">番茄小说双擎</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">不仅支持本地 TXT 导入，更内置独立无痕 Web 引擎，贴网址即可沉浸式阅读各大平台网页。</p>
+                </div>
+                <div class="glass-panel p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">硬件级秒切</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">全局老板键 (Ctrl+Alt+Z) 接管。多进程绝对同步，鼠标离开窗口自动边缘折叠，零延迟响应。</p>
+                </div>
+            </div>
+            
+            <!-- 免责声明小字 -->
+            <div class="mt-8 bg-gray-100/50 border border-gray-200/60 rounded-xl p-4">
+                <p class="text-xs text-gray-400 leading-relaxed text-left">
+                    <span class="font-bold text-gray-500">声明：</span>应用内置网页浏览功能仅为方便用户跳转访问各平台官方网页，所有网页内容、版权、服务均归属对应平台（如番茄小说等）所有。<br>
+                    本应用不会破解会员、绕过付费、删减平台广告、遮挡品牌标识、修改官方页面核心布局。用户需自行遵守番茄小说等平台用户协议，自行承担账号登录、会员开通及使用相关责任。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第三屏：基础操作 (纯文字版) -->
+    <section id="guide" class="py-20 px-6 bg-white/50 fade-in" style="animation-delay: 0.4s;">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">基础操作指南</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                <div>
+                    <h4 class="font-bold text-lg text-blue-600 mb-3 border-b pb-2">🖱️ 鼠标交互</h4>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li><strong class="text-gray-800">唤出菜单：</strong>在文字区域点击【鼠标右键】。</li>
+                        <li><strong class="text-gray-800">翻阅内容：</strong>直接滚动【鼠标滚轮】。</li>
+                        <li><strong class="text-gray-800">调节透明：</strong>按住【Alt键】不放，同时滚动【鼠标滚轮】。</li>
+                        <li><strong class="text-gray-800">移动窗口：</strong>网页模式下拖动左上角【⋮⋮】把手，TXT模式下直接拖拽文字。</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg text-blue-600 mb-3 border-b pb-2">⌨️ 快捷热键</h4>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li><strong class="text-gray-800">全局老板键：</strong>按下 【Ctrl + Alt + Z】瞬间全局隐藏 / 呼出。</li>
+                        <li><strong class="text-gray-800">循环大小：</strong>网页模式下按【A】键，切换不同窗口尺寸。</li>
+                        <li><strong class="text-gray-800">自动阅读：</strong>网页模式下按【S】键，在 常速/加速/暂停 间切换。</li>
+                        <li><strong class="text-gray-800">一键秒退：</strong>网页模式下按下【Esc】键，瞬间关闭销毁页面。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第四屏：免责声明 -->
+    <section class="py-16 px-6 fade-in" style="animation-delay: 0.6s;">
+        <div class="max-w-4xl mx-auto bg-gray-100/80 rounded-2xl p-8 border border-gray-200">
+            <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <span class="text-red-500">⚠️</span> 严正免责声明
+            </h2>
+            <div class="text-gray-600 text-sm space-y-2 leading-relaxed">
+                <p>1. <strong>软件属性：</strong>【无影阅读】为个人开发者利用业余时间编写的免费开源工具，仅供技术交流、UI设计学习以及个人日常排版测试使用。</p>
+                <p>2. <strong>内容中立：</strong>本软件定位为纯粹的“本地文本阅读器”与“极简浏览器外壳”。软件自身绝不提供、不存储、不爬取、不传播任何受版权保护的小说或文学作品数据。</p>
+                <p>3. <strong>责任归属：</strong>用户使用本软件加载、阅读的任何 TXT 文件或输入的任何网址，均由用户自行寻找并决定。因用户加载盗版资源或违规内容而产生的任何知识产权纠纷及法律责任，均由用户自行承担，与本软件及开发者无关。</p>
+                <p>4. <strong>商业禁止：</strong>本软件永久免费，严禁任何组织或个人将本软件二次打包进行商业倒卖。如果您是花钱购买的此软件，说明您已上当受骗，请立即退款并举报维权。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="py-8 text-center text-gray-500 text-sm">
+        <p>Copyright © 2024 无影阅读. All rights reserved.</p>
+        <p class="mt-2">Made with ❤️ for slackers.</p>
+    </footer>
+
+    <!-- 🎁 下载弹窗 (模态框) -->
+    <div id="downloadModal" class="fixed inset-0 z-[100] flex items-center justify-center hidden">
+        <!-- 半透明遮罩层 -->
+        <div class="absolute inset-0 bg-gray-900/60 backdrop-blur-sm" onclick="closeModal()"></div>
+        
+        <!-- 弹窗主体 -->
+        <div class="relative bg-white rounded-3xl shadow-2xl w-[90%] max-w-sm p-8 text-center transform transition-all scale-95 opacity-0" id="modalContent">
+            <!-- 关闭按钮 -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">获取最新版本</h3>
+            <p class="text-sm text-gray-500 mb-6">扫描下方二维码，关注公众号获取下载链接</p>
+
+            <!-- ⚠️ 这里放您的公众号二维码 -->
+            <div class="bg-gray-100 p-2 rounded-2xl mx-auto mb-6 inline-block border border-gray-200">
+                <!-- 🌟 SEO细节优化：给 img 的 alt 加上全称 -->
+                <img src="https://via.placeholder.com/200x200.png?text=Put+Your+QR+Code+Here" alt="无影阅读官方微信公众号二维码" class="w-48 h-48 object-cover rounded-xl">
+            </div>
+
+            <div class="bg-blue-50 text-blue-700 text-sm p-3 rounded-lg font-medium">
+                微信搜一搜 <span class="font-bold">【无影阅读】</span><br>后台回复关键词 <span class="font-bold text-red-500">“下载”</span> 即可
+            </div>
+        </div>
+    </div>
+
+    <!-- 弹窗控制 JS -->
+    <script>
+        const modal = document.getElementById('downloadModal');
+        const modalContent = document.getElementById('modalContent');
+
+        function openModal() {
+            modal.classList.remove('hidden');
+            // 延迟一点点添加动画类，触发 Tailwind 的过渡效果
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            modalContent.classList.add('scale-95', 'opacity-0');
+            // 等待动画结束后隐藏
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+    </script>
+</body>
+</html>
